@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(67, 94, 104);
+}
+h1{
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+/* .body{
+    background-color: lavenderblush;
+} */
+
+.intro-pic{
+position: relative;
+    margin-top: 0px;
+    margin-left: 350px;
+    transition: 1s ease-in;
+    animation: drop 4s ease-in-out;
+}  
+
+@keyframes drop {
+    0%{
+      opacity: 0;
+      transform: translatex(-1000px);
+    }
+    100%{
+      opacity: 1;
+      transform: translatex(0px);
+    }
+}
+
+.form-group{
+    /* border: 2px solid white; */
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 200px;
+}
+.mailPass{
+    font-size: 20px;
+}
+
+.btn1{
+    margin-left: 800px;
+    width: 100px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    border-radius: 20px;
+}

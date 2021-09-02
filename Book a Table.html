@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SHA Restaurant</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="Home.css" />
+    <link rel="stylesheet" href="Menu.css" />
+    <link rel="stylesheet" href="About.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="Book a Table.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="Home.html">
+            <img src="Images/logo.png" alt="" width="80px">
+          </a>
+        </div>
+        <ul class="nav navbar-nav nav-links">
+          <li><a href="Home.html">Home</a></li>
+          <li><a class="link" href="Menu.html">Menu</a></li>
+          <li><a class="link" href="About.html">About</a></li>
+          <li><a class="link" href="Contact.html">Contact</a></li>
+        </ul>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search"
+              name="search"
+            />
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="Book a Table.html">Book a Table</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1>Table Booking</h1>
+    <hr />
+    <form class="row g-3">
+      <div class="col-md-4 firstLabel">
+        <label for="validationServer01" class="form-label">First name</label>
+        <input
+          type="text"
+          class="form-control is-valid"
+          id="validationServer01"
+          placeholder="firstname"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+
+      <div class="col-md-4 lastLabel">
+        <label for="validationServer02" class="form-label">Last name</label>
+        <input
+          type="text"
+          class="form-control is-valid"
+          id="validationServer02"
+          placeholder="lastname"
+          required
+        />
+        <div class="valid-feedback placeholder">Looks good!</div>
+      </div>
+
+      <div class="col-md-4 userLabel">
+        <label for="Phone" class="form-label">Phone no</label>
+        <div class="input-group has-validation">
+          <input
+            type="phone"
+            class="form-control is-invalid"
+            id="validationServerUsername"
+            aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+            required
+          />
+          <div id="validationServerUsernameFeedback" class="invalid-feedback">
+            Please enter 10 digits mobile number.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationServer03" class="form-label">Date</label>
+        <input
+          type="date"
+          class="form-control validInput"
+          id="validationServer03"
+          aria-describedby="validationServer03Feedback"
+          required
+        />
+        <div id="validationServer03Feedback" class="invalid-feedback">
+          Please provide the date of dine-in.
+        </div>
+      </div>
+
+      <div class="Veg-non-veg firstLabel">
+        <label for="veg/non-veg" class="Veg"
+          >Do you prefer Veg or Non-veg?</label
+        >
+        <label
+          ><input
+            class="tick1"
+            type="radio"
+            name="veg/non-veg"
+            value="Veg"
+            required
+          />Veg</label
+        >
+        <label
+          ><input
+            type="radio"
+            class="tick2"
+            name="veg/non-veg"
+            value="Non-veg"
+            required
+          />Non-veg</label
+        >
+      </div>
+
+      <div class="Table">
+        <label for="quantity" class="people" input="number"
+          >Table for number of people?</label
+        >
+        <input
+          class="question"
+          type="number"
+          name="quantity"
+          id="quantity"
+          required
+        />
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input
+            class="form-check-input is-invalid"
+            type="checkbox"
+            value=""
+            id="invalidCheck3"
+            aria-describedby="invalidCheck3Feedback"
+            required
+          />
+          <label class="form-check-label" for="invalidCheck3">
+            Agree to terms and conditions
+          </label>
+          <div id="invalidCheck3Feedback" class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 ton">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+
+    <div class="social">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+
+    <footer>
+      <p class="text-white tm-footer-text">
+        Copyright &copy; 2021 Siddesh Algeri. Design:
+        <a style="width: 50%; margin: auto" class="referal-link">Website</a>
+      </p>
+    </footer>
+  </body>
+</html>
